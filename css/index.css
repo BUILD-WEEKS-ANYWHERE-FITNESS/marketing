@@ -199,7 +199,7 @@ header .navigation {
 header .navigation a {
   text-decoration: none;
   color: #d1eecc;
-  padding: 7%;
+  padding: 11%;
   font-weight: bold;
   margin: 5%;
   background: black;
@@ -211,7 +211,7 @@ header .navigation .navbtn {
   background: #ffd700;
   border: none;
   border-radius: 8px;
-  padding: 5% 30%;
+  padding: 5% 40%;
   color: #4f5a5f;
   font-weight: bold;
   font-size: 1.7rem;
@@ -249,55 +249,6 @@ header img {
     text-align: center;
   }
 }
-.aboutUs {
-  display: flex;
-  background: #f2eee5;
-}
-@media (max-width: 500px) {
-  .aboutUs {
-    display: flex;
-    flex-direction: column;
-  }
-}
-.workoutClass {
-  display: flex;
-  justify-content: center;
-  margin-left: 5%;
-}
-.workoutClass img {
-  width: 50%;
-  height: auto;
-  border-top: dashed 2px lightgray;
-}
-@media (max-width: 500px) {
-  .workoutClass img {
-    width: 100%;
-  }
-}
-.welcomePgraph {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-@media (max-width: 500px) {
-  .welcomePgraph {
-    align-items: center;
-  }
-}
-.welcomePgraph p {
-  width: 62%;
-  border-bottom: dashed 2px lightgray;
-}
-.welcomePgraph h2 {
-  padding-top: 2%;
-  width: 61%;
-  border-radius: 2px;
-}
-@media (max-width: 500px) {
-  .welcomePgraph h2 {
-    width: 100%;
-  }
-}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -308,6 +259,55 @@ header img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.aboutUs {
+  display: flex;
+  background: #f2eee5;
+}
+@media (max-width: 500px) {
+  .aboutUs {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.aboutUs .workoutClass {
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
+}
+.aboutUs .workoutClass img {
+  width: 50%;
+  height: auto;
+  border-top: dashed 2px lightgray;
+}
+@media (max-width: 500px) {
+  .aboutUs .workoutClass img {
+    width: 100%;
+  }
+}
+.aboutUs .welcomePgraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .aboutUs .welcomePgraph {
+    align-items: center;
+  }
+}
+.aboutUs .welcomePgraph p {
+  width: 62%;
+  border-bottom: dashed 2px lightgray;
+}
+.aboutUs .welcomePgraph h2 {
+  padding-top: 2%;
+  width: 61%;
+  border-radius: 2px;
+}
+@media (max-width: 500px) {
+  .aboutUs .welcomePgraph h2 {
+    width: 100%;
+  }
 }
 .content-pick {
   padding-top: 30px;
@@ -406,45 +406,63 @@ header img {
 .hostingClass {
   font-size: 2rem;
 }
-.hostingClass .classForm1 {
+.hostingClass .formUniversal {
+  display: flex;
+  justify-content: center;
+}
+.hostingClass .formUniversal .classForm1 {
   display: flex;
   flex-direction: column;
   padding: 3% 2%;
 }
-.hostingClass .classForm2 {
+.hostingClass .formUniversal .classForm2 {
   display: flex;
   flex-direction: column;
   padding: 3% 2%;
 }
-input {
+.hostingClass input {
   width: 300px;
   margin: 2% 3%;
   height: 40px;
 }
 @media (max-width: 500px) {
-  input {
+  .hostingClass input {
     width: 200px;
   }
 }
-.row3 {
+.hostingClass .row3 {
   display: flex;
   justify-content: center;
 }
-textarea {
+.hostingClass textarea {
   width: 500px;
 }
 @media (max-width: 500px) {
-  textarea {
+  .hostingClass textarea {
     width: 300px;
   }
 }
-.formUniversal {
-  display: flex;
-  justify-content: center;
-}
-.actions {
+.hostingClass .actions {
   display: flex;
   justify-content: center;
   padding: 1%;
   margin: 0% 2%;
+}
+.classSearch {
+  margin-left: 4%;
+}
+.classSearch p {
+  font-size: 3rem;
+}
+.classSearch .btn {
+  text-decoration: none;
+  background: #ffd700;
+  border: none;
+  border-radius: 8px;
+  padding: 0.3%;
+  color: #4f5a5f;
+  font-weight: bold;
+  font-size: 2rem;
+  width: 15%;
+  border: 2px solid white;
 }
