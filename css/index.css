@@ -474,6 +474,11 @@ header img {
   font-size: 3rem;
   width: 65%;
 }
+@media (max-width: 500px) {
+  .aboutTheTeam p {
+    font-size: 2rem;
+  }
+}
 .meetTheTeam h2 {
   display: flex;
   justify-content: center;
@@ -489,13 +494,30 @@ header img {
 .meetTheTeam p {
   width: 40%;
 }
+@media (max-width: 500px) {
+  .meetTheTeam p {
+    width: 100%;
+  }
+}
 .meetTheTeam .personOne {
   padding: 2%;
   display: flex;
 }
+@media (max-width: 500px) {
+  .meetTheTeam .personOne {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .meetTheTeam .personOne img {
   width: 30%;
   margin-left: 20%;
+}
+@media (max-width: 500px) {
+  .meetTheTeam .personOne img {
+    width: 100%;
+    margin: 0%;
+  }
 }
 .meetTheTeam .personOne .personDescription {
   display: flex;
@@ -509,9 +531,20 @@ header img {
   display: flex;
   flex-direction: row-reverse;
 }
+@media (max-width: 500px) {
+  .meetTheTeam .personTwo {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .meetTheTeam .personTwo img {
   width: 30%;
   margin-right: 15%;
+}
+@media (max-width: 500px) {
+  .meetTheTeam .personTwo img {
+    width: 100%;
+  }
 }
 .meetTheTeam .personTwo .personDescription {
   display: flex;
