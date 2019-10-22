@@ -5,29 +5,62 @@ header{
     padding: 2%;
     justify-content: space-around;
     background: url('../img/active-activity-adult-1472887\ \(1\).jpg') 100% 100% no-repeat;
-    height: auto;
     height: 600px;
-    .searchBar{
-        width: 15%;
-    
+
+    @media @mobile{
+        background: url('../img/mobile\ header.jpg') 100% 100% no-repeat;
+        flex-direction: column-reverse;
+        height: auto;
+        width: 100%;
+       
+        align-items: center;
     }
+
 
     .navigation{
         display:flex;
-        justify-content: space-evenly;
-        
+        justify-content: center;
+         
+        @media @mobile{
+           flex-direction: column;
+        }
+       
 
         a{
         text-decoration: none;
         color: #d1eecc;
-        font-size: 2.4rem;
-        padding: 5%;
+        padding: 11%;
         font-weight: bold;
         margin:5%;
         background: black;
         height: 8%;
         width: 100%;
         border-radius: 10px;
+
+       
+
+        }
+        .navbtn{   
+        background: #ffd700;
+        border: none;
+        border-radius: 8px;
+        padding: 5% 40%;
+         color: #4f5a5f;
+        font-weight: bold;
+        font-size: 1.7rem;
+        width: 70%;
+        displaY:flex;
+        justify-content: center;
+        border: 2px solid white;
+            
+        @media @mobile{
+           width: 50%;
+            font-size: 2rem;
+            padding: 5% 50%;
+              
+        
+        }
+
 
         }
     }
@@ -43,7 +76,7 @@ header{
     display:flex;
     justify-content: center;
     padding: 1%;
-    background:#d1eecc;
+    background:#022c43;
     
     
     h1{
@@ -52,55 +85,16 @@ header{
         font-size: 4rem;
         width: 50%;
         justify-content: center;
-    }
-
-}
-
-.aboutUs{
-    display:flex;
-background: #f2eee5;
-}
-
-.workoutClass{
-    display:flex;
-    justify-content: center;
-    margin-left: 5%;
-    
-
-  img{
-        width: 50%;
-        height: auto;
-        border-top: dashed 2px lightgray;
-        }
-    }
-    
-.welcomePgraph{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    
-    p{
-        width: 62%;
-        border-bottom: dashed 2px lightgray;
 
         @media @mobile{
-            font-size: 1.2rem;
-            padding-bottom: 3%;
-        }
-
-    }
-    h2{
-        padding-top: 2%;
-        width:  61%;
-        border-radius: 2px;
-        
-
-        @media @mobile{
-            font-size: 2.5rem;
-            font-weight: bold;
+            width: 100%;
+            text-align: center;
         }
     }
+
 }
+
+
+
 
 

@@ -19,8 +19,8 @@
   <header>
    
       <nav class="navigation">
-        <a href=#>Login</a>
-        <a href=#>Register</a>
+        <a class="navbtn" href=#>Login/SignUp</a>
+        <a class="navbtn"href="About.html">About</a>
       </nav>
       <div class="searchBar">
       <input type="text" placeholder="Find a Class..">
@@ -43,7 +43,7 @@
 </div>
 
   <div class="container-home">
-   <h2>Classes Currently Available Near You:</h2>
+   <h2>Classes Currently Available Near Your Location:</h2>
     <section class="content-pick">
       
       <div class="classType">
@@ -61,21 +61,42 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio id earum debitis, nulla officia voluptas enim amet sit fugiat praesentium nam voluptate quod rem dignissimos facere sunt omnis accusantium ullam!</p>
         <div class="btn">Sign Me Up!</div>
       </div>
+
+      
     </section>
+    <div class="classSearch">
+     <p> ...or 
+      <a class="btn" href=#>Click Here</a> 
+      to do a search of all registered classes!
+      </p>
+    </div>
+    
+
 
      <section class="hostingClass">
       <h2>Hosting a class?</h2>
       <form method="post" action="#">
-        <div class="classForm">
-          <div class="row1"><input type="text" name="name" id="name" placeholder="Name" /></div>
-          <div class="row1"><input type="email" name="email" id="email" placeholder="Email" /></div>
-          <div class="row2"><input type="text" name="fee" id="fee" placeholder="Fee" /></div>
-          <div class="row2"><input type="text" name="location" id="location" placeholder="Location" /></div>
-          <div class="row3"><textarea name="details" id="details" placeholder="Details of the Class" rows="8" ></textarea></div>
+
+      <div class="formUniversal"> 
+        <div class="classForm1">
+          <input type="text" name="name" id="name" placeholder="Name" />
+          <input type="text" name="email" id="email" placeholder="Email" />
+          <input type="text" name="fee" id="start-time" placeholder="Start Time" />
+          <input type="text" name="duration" id="duration" placeholder="Duration" />
+        </div>
+
+          <div class="classForm2">
+            <input type="text" name="fee" id="fee" placeholder="Fee" />
+            <input type="text" name="type" id="type" placeholder="Type" />
+            <input type="text" name="location" id="location" placeholder="Location" />
+            <input type="text" name="max class size" id="max class size" placeholder="Max Class Size" />
+          </div>
+        </div>
+          <div class="row3"><textarea name="details" id="details" placeholder="Additional Details" rows="8" ></textarea></div>
             <ul class="actions">
-              <li><input type="submit" class="primary" value="Send Message" /></li>
+              <li><input type="submit" class="primary" value="Register Your Class" /></li>
               <li><input type="reset" value="Reset Form" /></li>
-   
+            </ul>
     
 
      </section> 

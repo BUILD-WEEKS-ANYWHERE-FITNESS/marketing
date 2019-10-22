@@ -141,9 +141,10 @@ h2,
 h3,
 h4,
 h5 {
-  background: #d1eecc;
+  background: #022c43;
   font-family: 'Source Sans Pro', sans-serif;
   padding: 1%;
+  color: lightcyan;
 }
 h1 {
   font-size: 4rem;
@@ -175,27 +176,56 @@ header {
   padding: 2%;
   justify-content: space-around;
   background: url('../img/active-activity-adult-1472887\ \(1\).jpg') 100% 100% no-repeat;
-  height: auto;
   height: 600px;
 }
-header .searchBar {
-  width: 15%;
+@media (max-width: 500px) {
+  header {
+    background: url('../img/mobile\ header.jpg') 100% 100% no-repeat;
+    flex-direction: column-reverse;
+    height: auto;
+    width: 100%;
+    align-items: center;
+  }
 }
 header .navigation {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  header .navigation {
+    flex-direction: column;
+  }
 }
 header .navigation a {
   text-decoration: none;
   color: #d1eecc;
-  font-size: 2.4rem;
-  padding: 5%;
+  padding: 11%;
   font-weight: bold;
   margin: 5%;
   background: black;
   height: 8%;
   width: 100%;
   border-radius: 10px;
+}
+header .navigation .navbtn {
+  background: #ffd700;
+  border: none;
+  border-radius: 8px;
+  padding: 5% 40%;
+  color: #4f5a5f;
+  font-weight: bold;
+  font-size: 1.7rem;
+  width: 70%;
+  displaY: flex;
+  justify-content: center;
+  border: 2px solid white;
+}
+@media (max-width: 500px) {
+  header .navigation .navbtn {
+    width: 50%;
+    font-size: 2rem;
+    padding: 5% 50%;
+  }
 }
 header img {
   width: 60%;
@@ -204,7 +234,7 @@ header img {
   display: flex;
   justify-content: center;
   padding: 1%;
-  background: #d1eecc;
+  background: #022c43;
 }
 .title h1 {
   display: flex;
@@ -213,44 +243,10 @@ header img {
   width: 50%;
   justify-content: center;
 }
-.aboutUs {
-  display: flex;
-  background: #f2eee5;
-}
-.workoutClass {
-  display: flex;
-  justify-content: center;
-  margin-left: 5%;
-}
-.workoutClass img {
-  width: 50%;
-  height: auto;
-  border-top: dashed 2px lightgray;
-}
-.welcomePgraph {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.welcomePgraph p {
-  width: 62%;
-  border-bottom: dashed 2px lightgray;
-}
 @media (max-width: 500px) {
-  .welcomePgraph p {
-    font-size: 1.2rem;
-    padding-bottom: 3%;
-  }
-}
-.welcomePgraph h2 {
-  padding-top: 2%;
-  width: 61%;
-  border-radius: 2px;
-}
-@media (max-width: 500px) {
-  .welcomePgraph h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
+  .title h1 {
+    width: 100%;
+    text-align: center;
   }
 }
 .footer {
@@ -263,6 +259,55 @@ header img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.aboutUs {
+  display: flex;
+  background: #f2eee5;
+}
+@media (max-width: 500px) {
+  .aboutUs {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.aboutUs .workoutClass {
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
+}
+.aboutUs .workoutClass img {
+  width: 50%;
+  height: auto;
+  border-top: dashed 2px lightgray;
+}
+@media (max-width: 500px) {
+  .aboutUs .workoutClass img {
+    width: 100%;
+  }
+}
+.aboutUs .welcomePgraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .aboutUs .welcomePgraph {
+    align-items: center;
+  }
+}
+.aboutUs .welcomePgraph p {
+  width: 62%;
+  border-bottom: dashed 2px lightgray;
+}
+.aboutUs .welcomePgraph h2 {
+  padding-top: 2%;
+  width: 61%;
+  border-radius: 2px;
+}
+@media (max-width: 500px) {
+  .aboutUs .welcomePgraph h2 {
+    width: 100%;
+  }
 }
 .content-pick {
   padding-top: 30px;
@@ -343,7 +388,7 @@ header img {
 }
 .container-home {
   width: 100%;
-  background: #57a99a;
+  background: lightgray;
 }
 .container-home h2 {
   display: flex;
@@ -351,19 +396,73 @@ header img {
   height: 100px;
   font-size: 4rem;
 }
+@media (max-width: 500px) {
+  .container-home h2 {
+    font-size: 3rem;
+    text-align: center;
+    height: 75px;
+  }
+}
 .hostingClass {
   font-size: 2rem;
 }
-.hostingClass .classForm {
+.hostingClass .formUniversal {
+  display: flex;
+  justify-content: center;
+}
+.hostingClass .formUniversal .classForm1 {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 3% 2%;
 }
-input {
+.hostingClass .formUniversal .classForm2 {
+  display: flex;
+  flex-direction: column;
+  padding: 3% 2%;
+}
+.hostingClass input {
   width: 300px;
-  margin: 2% 0%;
+  margin: 2% 3%;
   height: 40px;
 }
-textarea {
+@media (max-width: 500px) {
+  .hostingClass input {
+    width: 200px;
+  }
+}
+.hostingClass .row3 {
+  display: flex;
+  justify-content: center;
+}
+.hostingClass textarea {
   width: 500px;
+}
+@media (max-width: 500px) {
+  .hostingClass textarea {
+    width: 300px;
+  }
+}
+.hostingClass .actions {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  margin: 0% 2%;
+}
+.classSearch {
+  margin-left: 4%;
+}
+.classSearch p {
+  font-size: 3rem;
+}
+.classSearch .btn {
+  text-decoration: none;
+  background: #ffd700;
+  border: none;
+  border-radius: 8px;
+  padding: 0.3%;
+  color: #4f5a5f;
+  font-weight: bold;
+  font-size: 2rem;
+  width: 15%;
+  border: 2px solid white;
 }
