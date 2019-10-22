@@ -1,0 +1,92 @@
+.content-pick {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    
+
+    
+      @media @mobile{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        
+      }
+
+    .classType {
+      width: 25%;
+      margin-bottom: 30px;
+
+      
+        @media @mobile{
+          width: 62%;
+          
+        }
+
+
+      h4{
+          display:flex;
+          justify-content: center;
+          border-radius: 12px;
+
+          @media @mobile{
+           font-size: 2rem;
+           font-weight: bold;
+            
+          }
+      }
+
+      p{
+          display:flex;
+          justify-content: center;
+          @media @mobile{
+            font-size: 1.2rem;
+            
+          }
+      }
+
+      .btn{
+        .custom-btn();
+
+        @media @mobile{
+          .custom-btn(@width: 300px)
+        }
+      }
+
+    }
+  }
+// home
+
+.container-home{
+  width: 100%;
+    background: #57a99a;
+
+    h2{
+      display:flex;
+      justify-content: center;
+      height: 100px;
+      font-size: 4rem;
+    }
+}
+
+.hostingClass{
+  font-size: 2rem;
+  
+    .classForm{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+    
+    
+    
+    }
+    
+  }
+
+input{
+  width: 300px;
+  margin: 2% 0%;
+  height: 40px;
+}
+textarea{
+  width:500px;
+}
