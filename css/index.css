@@ -466,3 +466,74 @@ header img {
   width: 15%;
   border: 2px solid white;
 }
+.aboutTheTeam {
+  display: flex;
+  justify-content: center;
+}
+.aboutTheTeam p {
+  font-size: 3rem;
+  width: 65%;
+}
+.meetTheTeam h2 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+.meetTheTeam h3 {
+  background: none;
+  width: 40%;
+  color: black;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.meetTheTeam p {
+  width: 40%;
+}
+.meetTheTeam .personOne {
+  padding: 2%;
+  display: flex;
+}
+.meetTheTeam .personOne img {
+  width: 30%;
+  margin-left: 20%;
+}
+.meetTheTeam .personOne .personDescription {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-right: 5%;
+}
+.meetTheTeam .personTwo {
+  padding: 2%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.meetTheTeam .personTwo img {
+  width: 30%;
+  margin-right: 15%;
+}
+.meetTheTeam .personTwo .personDescription {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-left: 5%;
+}
+.contactUs h2 {
+  display: flex;
+  justify-content: center;
+}
+.contactUs .contactForm {
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+}
+.contactUs .contform {
+  display: flex;
+  flex-direction: column;
+}
+.contactUs .contform input {
+  width: 400px;
+  padding: 1%;
+}
