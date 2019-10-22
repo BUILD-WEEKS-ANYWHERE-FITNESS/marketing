@@ -1,20 +1,31 @@
-// Mixins in here
+.testBorder {
+    border: 2px solid green;
+}
 
-.custom-btn(@bg-color: #ecf4f3, @width: 180px, @txt-color: #0c093c){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: @bg-color;
-    margin: 0 10px 20px;
+.redRound(@border-radius: 50%) {
+    background: rgb(255, 0, 0);
+    background: radial-gradient(circle, rgba(255, 0, 0, 1) 0%, rgba(40, 33, 33, 1) 100%);
+    width: 20%;
+    border-radius: @border-radius;
+    border: 1px solid gold;
+}
+
+.buttonSettings(@bgcolor: rgb(255, 0, 0) , @width: 100px, @font-color: gold) {
+    display: block;
+    background-color: @bgcolor;
+    margin: 0 2% 2%;
     cursor: pointer;
     width: @width;
-    height: 45px;
-    font-size: 2rem;
+    height: 5%;
+    font-size: 1rem;
     border-radius: 10px;
-    color:@txt-color;
-    
-    &:hover{
-      background-color: @txt-color;
-      color: @bg-color;
-    }
+    color: @font-color;
+    transition: relative;
+    background: radial-gradient(circle, rgba(255, 0, 0, 1) 0%, rgba(40, 33, 33, 1) 100%);
+}
+
+
+.center{
+    justify-content: center;
+    align-items: center;
 }
