@@ -5,529 +5,253 @@
   justify-content: center;
   align-items: center;
 }
-html {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-html body {
-  background-image: url(/img/Curtains.png);
-  background-size: 100%;
-  font-size: 1rem;
-}
-html body p,
-html body h1,
-html body h2,
-html body h3,
-html body h4,
-html body h5,
-html body li,
-html body nav a {
-  color: gold;
-}
-html body .header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 1%;
-  margin-left: 2%;
-  margin-right: 2%;
-  width: 75%;
-  padding-left: 5%;
-  text-decoration: none;
-}
-html body .header .welcome {
-  background: #ff0000;
-  background: radial-gradient(circle, #ff0000 0%, #282121 100%);
-  width: 20%;
-  border-radius: 10%;
-  border: 1px solid gold;
-  width: 50%;
-  text-align: center;
-  padding-left: 5%;
-  padding-right: 5%;
-  margin-top: 30%;
-  margin-left: 3%;
-  font-size: 1rem;
-}
-html body .header .welcome h1 {
-  font-family: 'permanent marker';
-  letter-spacing: 3px;
-}
-html body .header .welcome a {
-  text-decoration-color: Gold;
-  font-family: 'permanent marker';
-  letter-spacing: 3px;
-  color: gold;
-}
-html body .header .welcome p {
-  font-family: 'volkhov';
-}
-html body .header .welcome h2 {
-  font-family: 'notable';
-  letter-spacing: 1px;
-}
-html body .header .navMeta {
-  margin-top: -46.7%;
-  margin-left: -65%;
-}
-html body .header .icon {
-  background: #ff0000;
-  background: radial-gradient(circle, #ff0000 0%, #282121 100%);
-  width: 20%;
-  border-radius: 50%;
-  border: 1px solid gold;
-  font-family: 'permanent marker';
-  text-align: center;
-}
-html body .header .icon a {
-  text-decoration: none;
-}
-html body .header nav {
-  width: 400%;
-  text-decoration: none;
-  height: 10%;
-  font-family: 'Satisfy';
-}
-html body .header nav a {
-  background: #ff0000;
-  background: radial-gradient(circle, #ff0000 0%, #282121 100%);
-  width: 20%;
-  border-radius: 50%;
-  border: 1px solid gold;
-  text-decoration: none;
-  margin: 3%;
-  padding: 2%;
-}
-html body .mid {
-  display: flex;
-  margin-top: 5%;
-  justify-content: space-around;
-}
-html body .mid .celebrity {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Notable';
-  width: 25%;
-  margin-left: 18%;
-  text-align: center;
-  letter-spacing: 1px;
-}
-html body .mid .celebrity .star {
-  width: 75%;
-}
-html body .mid .celebrity h2 {
-  background: #ff0000;
-  background: radial-gradient(circle, #ff0000 0%, #282121 100%);
-  width: 20%;
-  border-radius: 10%;
-  border: 1px solid gold;
+.footer {
   width: 100%;
+  border-top: 2px dashed silver;
 }
-html body .mid .celebrity p {
-  background: #ff0000;
-  background: radial-gradient(circle, #ff0000 0%, #282121 100%);
-  width: 20%;
-  border-radius: 10%;
-  border: 1px solid gold;
-  width: 100%;
-  font-size: 0.75rem;
-}
-html body .mid .buttons {
-  margin-top: 20.5%;
-  margin-right: 10%;
-  margin-left: 10%;
-  padding-top: 1.2%;
-  background: #ff0000;
-  background: radial-gradient(circle, #ff0000 0%, #282121 100%);
-  border-radius: 20%;
-  border: 1px solid gold;
-  width: 20%;
+.footer p {
   text-align: center;
-  height: 5%;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+body {
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+body .bodyMinor {
+  width: 85%;
   align-items: center;
-  font-family: 'Notable';
-  font-size: 0.5rem;
-  letter-spacing: 2px;
-}
-html body .mid .buttons .buttons:hover {
-  cursor: pointer;
-  -webkit-box-shadow: 0px 5px 40px -10px gold;
-  -moz-box-shadow: 0px 5px 40px -10px gold;
-  box-shadow: 5px 40px -10px gold;
-  transition: all 0.4s ease 0s;
-}
-html body .mid .buttons .Alive,
-html body .mid .buttons .Dead {
-  display: block;
-  background-color: #ff0000;
-  margin: 0 2% 2%;
-  cursor: pointer;
-  width: 100px;
-  height: 5%;
-  font-size: 1rem;
-  border-radius: 10px;
-  color: gold;
-  transition: relative;
-  background: radial-gradient(circle, #ff0000 0%, #282121 100%);
-  font-family: 'permanent marker';
-  letter-spacing: 3px;
-}
-html body .mid .scoreBoard {
-  margin-right: 18%;
-  background: #ff0000;
-  background: radial-gradient(circle, #ff0000 0%, #282121 100%);
-  width: 20%;
-  border-radius: 10%;
-  border: 1px solid gold;
-  height: 10%;
-  text-align: center;
-  font-family: 'Notable';
-}
-html .creditsMeta {
-  margin-top: 2%;
-  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
-html .creditsMeta .credits {
-  background: #ff0000;
-  background: radial-gradient(circle, #ff0000 0%, #282121 100%);
-  width: 20%;
-  border-radius: 10%;
-  border: 1px solid gold;
+body .bodyMinor .header {
+  padding: 5%;
+  background: #ea6c36;
+}
+body .bodyMinor .header nav {
+  width: 100%;
+  border: 2px solid red;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
   flex-direction: row;
-  width: 66%;
+  justify-content: space-between;
+  font-size: 2rem;
 }
-html .creditsMeta .credits h1 {
-  text-align: center;
-  font-family: 'Notable';
-  letter-spacing: 2rem;
+body .bodyMinor .header nav a {
+  text-decoration: none;
+  background: #9a5131;
+  border: 10px solid black;
+  padding: 2%;
+  color: #e7e7e7;
+  border-radius: 5px;
 }
-html .creditsMeta .credits .Cast {
+body .bodyMinor header {
   display: flex;
-  flex-wrap: wrap;
+  padding: 2%;
+  justify-content: space-around;
+  height: auto;
+  height: 600px;
+}
+body .bodyMinor header .searchBar {
+  width: 15%;
+}
+body .bodyMinor header .navigation {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 18%;
+  border: 2px solid red;
+  width: 50%;
+}
+body .bodyMinor header .navigation a {
+  text-align: center;
+  text-decoration: none;
+  color: #d1eecc;
+  font-size: 2.4rem;
+  padding: 5%;
+  font-weight: bold;
+  margin: 5%;
+  background: black;
+  height: 10%;
+  width: 50%;
+  border-radius: 10px;
+}
+body .bodyMinor header img {
+  width: 60%;
+}
+body .bodyMinor .fitnessContainer {
+  display: flex;
+}
+body .bodyMinor .fitnessContainer .left,
+body .bodyMinor .fitnessContainer .right {
+  width: 25%;
+}
+body .bodyMinor .fitnessContainer .fitnessCenter {
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  background: #ea6c36;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+body .bodyMinor .fitnessContainer .fitnessCenter .pt1 {
+  width: 100%;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+}
+body .bodyMinor .fitnessContainer .fitnessCenter .pt1 .pt1minor {
+  display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Notable';
 }
-html .creditsMeta .credits .Cast h1 {
-  text-align: center;
-  letter-spacing: 0.5rem;
+body .bodyMinor .fitnessContainer .fitnessCenter .pt2 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
-html .creditsMeta .credits .Cast .castMember {
-  margin: 0.5%;
-  font-size: 0.75rem;
-  text-align: center;
+body .bodyMinor .fitnessContainer .fitnessCenter .pt2 .pt2minor {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
-html .creditsMeta .credits .Cast .castMember p {
-  font-family: 'Volkhov', serif;
+@media (max-width: 600px) {
+  body .bodyMinor .fitnessContainer .fitnessCenter .pt1,
+  body .bodyMinor .fitnessContainer .fitnessCenter .pt2 {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    font-size: 0.5rem;
+    text-align: center;
+  }
 }
 @media (max-width: 800px) {
-  html body {
-    font-size: 1rem;
-    background-image: url(/img/tablet_curtains.png);
-    background-repeat: no-repeat;
-    background-size: fill;
-  }
-  html body .creditsMeta .credits {
-    width: 100%;
-  }
-  html body .header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 1%;
-    margin-left: 2%;
-    margin-right: 2%;
-    width: 75%;
-    text-decoration: none;
-  }
-  html body .header .welcome {
-    margin-left: 17%;
-  }
-  html body .header .navMeta {
-    margin-top: -90.7%;
-    margin-left: -35%;
-  }
-  html body .header .icon {
-    background: #ff0000;
-    background: radial-gradient(circle, #ff0000 0%, #282121 100%);
-    border-radius: 50%;
-    border: 1px solid gold;
-    margin-top: 2%;
-    margin-left: 5%;
-    font-family: 'permanent marker';
-    text-align: center;
-    width: 20%;
-  }
-  html body .header .icon a {
-    text-decoration: none;
-  }
-  html body .header nav {
-    width: 200%;
-    text-decoration: none;
-    height: 10%;
-    font-family: 'Satisfy';
-  }
-  html body .header nav a {
-    background: #ff0000;
-    background: radial-gradient(circle, #ff0000 0%, #282121 100%);
-    width: 20%;
-    border-radius: 50%;
-    border: 1px solid gold;
-    text-decoration: none;
-    margin: 3%;
-    padding: 2%;
-  }
-  html body .mid {
-    display: flex;
-    margin-top: 5%;
-    justify-content: space-around;
-  }
-  html body .mid .celebrity {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Notable';
-    width: 25%;
-    margin-left: 18%;
-    text-align: center;
-    margin-top: 12%;
-  }
-  html body .mid .celebrity .star {
-    width: 75%;
-  }
-  html body .mid .celebrity h2 {
-    background: #ff0000;
-    background: radial-gradient(circle, #ff0000 0%, #282121 100%);
-    width: 20%;
-    border-radius: 10%;
-    border: 1px solid gold;
-    width: 100%;
-  }
-  html body .mid .celebrity p {
-    background: #ff0000;
-    background: radial-gradient(circle, #ff0000 0%, #282121 100%);
-    width: 20%;
-    border-radius: 10%;
-    border: 1px solid gold;
-    width: 150%;
-    font-size: 0.75rem;
-    margin-left: -25%;
-  }
-  html body .mid .buttons {
-    margin-top: 43%;
-    margin-right: 10%;
-    margin-left: 10%;
-    padding-top: 1.2%;
-    background: #ff0000;
-    background: radial-gradient(circle, #ff0000 0%, #282121 100%);
-    border-radius: 20%;
-    border: 1px solid gold;
-    width: 20%;
-    text-align: center;
-    height: 5%;
+  body .bodyMinor .fitnessContainer .fitnessCenter .pt1,
+  body .bodyMinor .fitnessContainer .fitnessCenter .pt2 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Notable';
+    border: 2px solid red;
     font-size: 0.5rem;
-    letter-spacing: 2px;
-  }
-  html body .mid .buttons .buttons:hover {
-    cursor: pointer;
-    -webkit-box-shadow: 0px 5px 40px -10px gold;
-    -moz-box-shadow: 0px 5px 40px -10px gold;
-    box-shadow: 5px 40px -10px gold;
-    transition: all 0.4s ease 0s;
-  }
-  html body .mid .buttons .Alive,
-  html body .mid .buttons .Dead {
-    display: block;
-    background-color: #ff0000;
-    margin: 0 2% 2%;
-    cursor: pointer;
-    width: 100px;
-    height: 5%;
-    font-size: 1rem;
-    border-radius: 10px;
-    color: gold;
-    transition: relative;
-    background: radial-gradient(circle, #ff0000 0%, #282121 100%);
-    font-family: 'permanent marker';
-    letter-spacing: 3px;
-  }
-  html body .mid .scoreBoard {
-    margin-top: 25%;
-    margin-right: 10%;
-    background: #ff0000;
-    background: radial-gradient(circle, #ff0000 0%, #282121 100%);
-    width: 20%;
-    border-radius: 5%;
-    border: 1px solid gold;
-    height: 10%;
     text-align: center;
-    font-family: 'Notable';
-    font-size: 0.75rem;
   }
 }
-@media (max-width: 500px) {
-  html body {
-    font-size: 0.75rem;
-    background-image: none;
-    background-color: red;
-    background: radial-gradient(circle, #ff0000 0%, #282121 100%);
+body .bodyMinor .flex {
+  text-align: center;
+}
+body .bodyMinor h1 {
+  padding: 1%;
+  font-size: 3em;
+  width: 50%;
+  justify-content: center;
+}
+body .bodyMinor .aboutUs {
+  display: flex;
+  background: #f2eee5;
+}
+body .bodyMinor .workoutClass {
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
+}
+body .bodyMinor .workoutClass img {
+  width: 50%;
+  height: auto;
+  border-top: dashed 2px lightgray;
+}
+body .bodyMinor .welcomePgraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .bodyMinor .welcomePgraph p {
+  width: 62%;
+  border-bottom: dashed 2px lightgray;
+}
+@media (max-width: 600px) {
+  body .bodyMinor .welcomePgraph p {
+    font-size: 1.2rem;
+    padding-bottom: 3%;
   }
-  html body .header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 1%;
-    margin-left: -5%;
-    margin-right: 2%;
-    width: 80%;
-    text-decoration: none;
+}
+body .bodyMinor .welcomePgraph h2 {
+  padding-top: 2%;
+  width: 61%;
+  border-radius: 2px;
+}
+@media (max-width: 600px) {
+  body .bodyMinor .welcomePgraph h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
   }
-  html body .header .welcome {
-    margin-top: 50%;
-    margin-left: -5%;
-    width: 100%;
-  }
-  html body .header .navMeta {
-    margin-top: -100.7%;
-    margin-left: -115%;
-    width: 50%;
-  }
-  html body .header .icon {
-    margin-top: 2%;
-    margin-left: 7%;
-    padding-left: 7%;
-    padding-right: 7%;
-    font-family: 'permanent marker';
-    text-align: center;
-    width: 20%;
-  }
-  html body .header .icon a {
-    text-decoration: none;
-  }
-  html body .header nav {
-    margin-left: -20%;
-    text-decoration: none;
-    height: 10%;
-    padding: 10%;
-    font-family: 'Satisfy';
-  }
-  html body .header nav a {
-    margin: 0%;
-    text-decoration: none;
-    padding: 8%;
-  }
-  html body .mid {
-    display: flex;
-    margin-top: 5%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0%;
-    padding: 0%;
-  }
-  html body .mid .celebrity {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Notable';
-    margin-top: -1%;
-    margin-right: 43%;
-    width: 50%;
-    margin-bottom: 0%;
-    text-align: center;
-  }
-  html body .mid .celebrity .star {
-    width: 75%;
-  }
-  html body .mid .celebrity h2 {
-    background: #ff0000;
-    background: radial-gradient(circle, #ff0000 0%, #282121 100%);
-    width: 20%;
-    border-radius: 10%;
-    border: 1px solid gold;
-    width: 100%;
-  }
-  html body .mid .celebrity p {
-    background: #ff0000;
-    background: radial-gradient(circle, #ff0000 0%, #282121 100%);
-    width: 20%;
-    border-radius: 10%;
-    border: 1px solid gold;
-    width: 150%;
-    font-size: 0.75rem;
-  }
-  html body .mid .buttons {
-    margin-top: -2.6%;
-    margin-right: 10%;
-    margin-left: 10%;
-    padding-top: 5%;
-    padding-right: 35%;
-    padding-left: 35%;
-    padding-bottom: -100%;
-    background: none;
-    border: none;
-    width: 20%;
-    text-align: center;
+}
+.content-pick {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 600px) {
+  .content-pick {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    font-family: 'Notable';
-    font-size: 0.5rem;
-    letter-spacing: 2px;
   }
-  html body .mid .buttons .buttons:hover {
-    cursor: pointer;
-    -webkit-box-shadow: 0px 5px 40px -10px gold;
-    -moz-box-shadow: 0px 5px 40px -10px gold;
-    box-shadow: 5px 40px -10px gold;
-    transition: all 0.4s ease 0s;
+}
+.content-pick .classType {
+  width: 25%;
+  margin-bottom: 30px;
+}
+@media (max-width: 600px) {
+  .content-pick .classType {
+    width: 62%;
   }
-  html body .mid .buttons .Alive,
-  html body .mid .buttons .Dead {
-    display: block;
-    background-color: #ff0000;
-    margin: 0 2% 2%;
-    cursor: pointer;
-    width: 100px;
-    height: 5%;
-    font-size: 1rem;
-    border-radius: 10px;
-    color: gold;
-    transition: relative;
-    background: radial-gradient(circle, #ff0000 0%, #282121 100%);
-    font-family: 'permanent marker';
-    letter-spacing: 3px;
+}
+.content-pick .classType h4 {
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+}
+@media (max-width: 600px) {
+  .content-pick .classType h4 {
+    font-size: 2rem;
+    font-weight: bold;
   }
-  html body .mid .scoreBoard {
-    background: #ff0000;
-    background: radial-gradient(circle, #ff0000 0%, #282121 100%);
-    width: 20%;
-    border-radius: 5%;
-    border: 1px solid gold;
-    width: 25%;
-    text-align: center;
-    font-family: 'Notable';
-    font-size: 0.75rem;
-    margin-top: -130%;
-    margin-left: 75%;
-    background: none;
-    border: none;
+}
+.content-pick .classType p {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  .content-pick .classType p {
+    font-size: 1.2rem;
   }
+}
+.container-home {
+  width: 100%;
+  background: #57a99a;
+}
+.container-home h2 {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  font-size: 4rem;
+}
+.hostingClass {
+  font-size: 2rem;
+  text-align: center;
+}
+.hostingClass .classForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  width: 300px;
+  margin: 2% 0%;
+  height: 40px;
+}
+textarea {
+  width: 500px;
 }

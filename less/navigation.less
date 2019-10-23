@@ -1,106 +1,213 @@
 // Navigation Styles here
-
-header{
-    display:flex;
-    padding: 2%;
-    justify-content: space-around;
-    background: url('../img/active-activity-adult-1472887\ \(1\).jpg') 100% 100% no-repeat;
-    height: auto;
-    height: 600px;
-    .searchBar{
-        width: 15%;
+body{
     
-    }
-
-    .navigation{
-        display:flex;
-        justify-content: space-evenly;
-        
-
-        a{
-        text-decoration: none;
-        color: #d1eecc;
-        font-size: 2.4rem;
-        padding: 5%;
-        font-weight: bold;
-        margin:5%;
-        background: black;
-        height: 8%;
-        width: 100%;
-        border-radius: 10px;
-
-        }
-    }
-
-    img{
-        width: 60%;
-        
-    }
-  
-}
-
-.title{
-    display:flex;
-    justify-content: center;
-    padding: 1%;
-    background:#d1eecc;
-    
-    
-    h1{
-        display:flex;
-        padding: 1%;
-        font-size: 4rem;
-        width: 50%;
+    display: flex;
+    align-items: center;
+        flex-direction: column;
         justify-content: center;
-    }
-
-}
-
-.aboutUs{
-    display:flex;
-background: #f2eee5;
-}
-
-.workoutClass{
-    display:flex;
-    justify-content: center;
-    margin-left: 5%;
+    .bodyMinor{
+    .header{
+        
+        nav{
+            width: 100%;
+            border: 2px solid red;
+            display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+                font-size: 2rem;
+                
+            a{
+                text-decoration: none;
+                background: #9a5131;
+                border: 10px solid black;
+                padding: 2%;
+                color: #e7e7e7;
+                border-radius: 5px;
+                
     
-
-  img{
-        width: 50%;
-        height: auto;
-        border-top: dashed 2px lightgray;
+            }
         }
+        
+        padding: 5%;
+        background:#ea6c36; 
     }
-    
-.welcomePgraph{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    
-    p{
-        width: 62%;
-        border-bottom: dashed 2px lightgray;
-
-        @media @mobile{
-            font-size: 1.2rem;
-            padding-bottom: 3%;
+        width: 85%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+            header{
+                display:flex;
+                padding: 2%;
+                justify-content: space-around;
+                // background: url('../img/active-activity-adult-1472887\ \(1\).jpg') 100% 100% no-repeat;
+                height: auto;
+                height: 600px;
+                .searchBar{
+                    width: 15%;
+                
+                }
+            
+                .navigation{
+                    display:flex;
+                    justify-content: space-evenly;
+                    margin-bottom: 18%;
+                    border: 2px solid red;
+                    width: 50%;
+                    
+                    
+            
+                    a{
+                        text-align: center;
+                    text-decoration: none;
+                    color: #d1eecc;
+                    font-size: 2.4rem;
+                    padding: 5%;
+                    font-weight: bold;
+                    margin:5%;
+                    background: black;
+                    height: 10%;
+                    width: 50%;
+                    border-radius: 10px;
+            
+                    }
+                }
+            
+                img{
+                    width: 60%;
+                    
+                }
+              
+            }
+            .fitnessContainer{
+                display: flex;
+                
+                .left, .right{
+                    width: 25%;
+                }
+                .fitnessCenter{
+                    
+                    display:flex;
+                    justify-content: center;
+                    padding: 1%;
+                    background:#ea6c36;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 50%;
+                   
+                    
+                    .pt1{
+                        width: 100%;
+                        
+                    
+                        display: flex;
+                        flex-direction: center;
+                        align-items: center;
+                        .pt1minor{
+                            
+                            display: flex;
+                            justify-content: center;
+                        align-items: center;
+                        }
+                        
+                    }
+                    .pt2{
+                        
+                        display: flex;
+                        width: 100%;
+                        justify-content: center;
+                    align-items: center;
+                    .pt2minor{
+                        
+                        display: flex;
+                        width: 100%;
+                        justify-content: center;
+                    align-items: center;
+                    }
+                    }
+                     .pt1, .pt2{
+                        @media @phone{
+                            display: flex;
+                            flex-direction: column;
+                            border: 2px solid red;
+                            font-size: .5rem;
+                            text-align: center;
+                        }
+                        @media @tablet{
+                            display: flex;
+                            flex-direction: column;
+                            border: 2px solid red;
+                            font-size: .5rem;
+                            text-align: center;
+                        }
+                     }
+                 }
+            }
+            
+             .flex{
+                 text-align: center;
+             }
+                
+                h1{
+                    padding: 1%;
+                    font-size: 3em;
+                    width: 50%;
+                    justify-content: center;
+                }
+            
+            
+            
+            .aboutUs{
+                display:flex;
+            background: #f2eee5;
+            }
+            
+            .workoutClass{
+                display:flex;
+                justify-content: center;
+                margin-left: 5%;
+                
+            
+              img{
+                    width: 50%;
+                    height: auto;
+                    border-top: dashed 2px lightgray;
+                    }
+                }
+                
+            .welcomePgraph{
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                
+                
+                p{
+                    width: 62%;
+                    border-bottom: dashed 2px lightgray;
+            
+                    @media @phone{
+                        font-size: 1.2rem;
+                        padding-bottom: 3%;
+                    }
+            
+                }
+                h2{
+                    padding-top: 2%;
+                    width:  61%;
+                    border-radius: 2px;
+                    
+            
+                    @media @phone{
+                        font-size: 2.5rem;
+                        font-weight: bold;
+                    }
+                }
+            }
         }
-
-    }
-    h2{
-        padding-top: 2%;
-        width:  61%;
-        border-radius: 2px;
         
 
-        @media @mobile{
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
-    }
+
+        
 }
 
 
+    
