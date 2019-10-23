@@ -249,16 +249,12 @@ header img {
     text-align: center;
   }
 }
-.footer {
-  width: 100%;
-  border-top: 2px dashed silver;
-  background: #FFEBCD;
+footer {
+  display: flex;
+  justify-content: center;
 }
-.footer p {
-  text-align: center;
-  color: #212529;
-  font-size: 1.6rem;
-  padding: 20px;
+footer p {
+  font-size: 1.5rem;
 }
 .aboutUs {
   display: flex;
@@ -469,6 +465,7 @@ header img {
 .aboutTheTeam {
   display: flex;
   justify-content: center;
+  background: lightgray;
 }
 .aboutTheTeam p {
   font-size: 3rem;
@@ -478,6 +475,9 @@ header img {
   .aboutTheTeam p {
     font-size: 2rem;
   }
+}
+.meetTheTeam {
+  background: lightgray;
 }
 .meetTheTeam h2 {
   display: flex;
@@ -552,6 +552,9 @@ header img {
   text-align: center;
   align-items: center;
   margin-left: 5%;
+}
+.contactUs {
+  background: lightgray;
 }
 .contactUs h2 {
   display: flex;
