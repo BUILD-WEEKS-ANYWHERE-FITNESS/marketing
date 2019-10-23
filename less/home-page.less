@@ -7,6 +7,11 @@
   flex-direction: column;
 }
 
+@media @tablet{
+  display:flex;
+  flex-direction: column;
+}
+
 .workoutClass{
   display:flex;
   justify-content: center;
@@ -23,6 +28,10 @@ img{
          width:100% 
       }
 
+      @media @tablet{
+        width: 100%;
+      }
+
       }
   }
   
@@ -34,6 +43,12 @@ img{
   @media @mobile{
       align-items:center;
   }
+
+  @media @tablet{
+    align-items:center;
+    width:100%;
+  }
+
   p{
       width: 62%;
       border-bottom: dashed 2px lightgray;
@@ -143,7 +158,6 @@ img{
       display:flex;
       flex-direction: column;
       padding: 3% 2%;
-  
     }
     
     .classForm2{
