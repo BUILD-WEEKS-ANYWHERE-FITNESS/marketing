@@ -542,6 +542,11 @@ footer p {
     font-size: 2rem;
   }
 }
+@media (max-width: 800px) {
+  .aboutTheTeam p {
+    font-size: 2rem;
+  }
+}
 .meetTheTeam {
   background-image: radial-gradient(circle farthest-corner at 10% 20%, #eff6f9 0%, #ceeffd 90%);
 }
@@ -565,6 +570,11 @@ footer p {
     width: 100%;
   }
 }
+@media (max-width: 800px) {
+  .meetTheTeam p {
+    width: 100%;
+  }
+}
 .meetTheTeam .personOne {
   padding: 2%;
   display: flex;
@@ -575,11 +585,23 @@ footer p {
     flex-direction: column;
   }
 }
+@media (max-width: 800px) {
+  .meetTheTeam .personOne {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .meetTheTeam .personOne img {
   width: 30%;
   margin-left: 20%;
 }
 @media (max-width: 500px) {
+  .meetTheTeam .personOne img {
+    width: 100%;
+    margin: 0%;
+  }
+}
+@media (max-width: 800px) {
   .meetTheTeam .personOne img {
     width: 100%;
     margin: 0%;
@@ -603,11 +625,22 @@ footer p {
     flex-direction: column;
   }
 }
+@media (max-width: 800px) {
+  .meetTheTeam .personTwo {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .meetTheTeam .personTwo img {
   width: 30%;
   margin-right: 15%;
 }
 @media (max-width: 500px) {
+  .meetTheTeam .personTwo img {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
   .meetTheTeam .personTwo img {
     width: 100%;
   }
