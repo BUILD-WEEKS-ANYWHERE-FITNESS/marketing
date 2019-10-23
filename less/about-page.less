@@ -1,7 +1,7 @@
 .aboutTheTeam{
     display:flex;
     justify-content: center;
-    background: lightgray;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(239,246,249,1) 0%, rgba(206,239,253,1) 90% );
 
     p{
     font-size: 3rem;
@@ -14,13 +14,14 @@
 }
 
 .meetTheTeam{
-     background: lightgray;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(239,246,249,1) 0%, rgba(206,239,253,1) 90% );
 
 
     h2{
         display:flex;
         justify-content: center;
         padding-bottom: 2%;
+        
     }
     h3{
         background: none;
@@ -94,15 +95,39 @@
         flex-direction: column;
         text-align:center;
         align-items: center;
-       margin-left:5%;
+        margin-left:5%;
        
         }
     }
 }
 
 .contactUs{
-    background: lightgray;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(239,246,249,1) 0%, rgba(206,239,253,1) 90% );
     
+    input{
+        width: 200px;
+        padding: 2%;
+        margin: 1%;
+        background-color: #deffe0;
+        background-image: linear-gradient(0deg, #deffe0 0%, #d7e7e2 100%);
+
+
+
+    } 
+    
+    textarea{
+        width: 400px;
+        height: 250px
+        
+        
+
+    }   
+
+    .actions{
+        display:flex;
+        padding: 1%;
+        
+    }
 
     h2{
         display:flex;
@@ -112,20 +137,9 @@
 
     .contactForm{
         display:flex;
-        justify-content: center;
+        flex-direction:column;
+        align-items: center;
         padding: 3%;
-    }
-
-    .contform{
-    
-    display:flex;
-    flex-direction: column;
-    
-    input{
-        width: 400px;
-        padding: 1%;
-    }
-
     }
 
 }
