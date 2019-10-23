@@ -142,10 +142,12 @@ h3,
 h4,
 h5 {
   background: #022C43;
+  background: radial-gradient(circle, #022c43 84%, #3e73b1 100%);
   font-family: 'Source Sans Pro', sans-serif;
   padding: 1%;
   text-shadow: 2px 3px 2px rgba(255, 255, 255, 0.78);
   color: #E0FFFF;
+  text-shadow: 0 0 3px #020101, 0 0 5px #0a0a0e;
 }
 h1 {
   font-size: 4rem;
@@ -188,6 +190,15 @@ header {
     align-items: center;
   }
 }
+header .searchBar input {
+  width: 350px;
+  height: 40px;
+}
+@media (max-width: 500px) {
+  header .searchBar input {
+    width: 275px;
+  }
+}
 header .navigation {
   display: flex;
   justify-content: center;
@@ -221,6 +232,10 @@ header .navigation .navbtn {
   justify-content: center;
   border: 2px solid white;
 }
+header .navigation .navbtn:hover {
+  background-color: #4f5a5f;
+  color: #ffd700;
+}
 @media (max-width: 500px) {
   header .navigation .navbtn {
     width: 50%;
@@ -236,6 +251,7 @@ header img {
   justify-content: center;
   padding: 1%;
   background: #022c43;
+  background: radial-gradient(circle, #022c43 84%, #3e73b1 100%);
 }
 .title h1 {
   display: flex;
@@ -243,6 +259,7 @@ header img {
   font-size: 4rem;
   width: 50%;
   justify-content: center;
+  background: none;
 }
 @media (max-width: 500px) {
   .title h1 {
@@ -259,7 +276,7 @@ footer p {
 }
 .aboutUs {
   display: flex;
-  background: lightgray;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, #eff6f9 0%, #ceeffd 90%);
 }
 @media (max-width: 500px) {
   .aboutUs {
@@ -385,7 +402,7 @@ footer p {
 }
 .container-home {
   width: 100%;
-  background: lightgray;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, #eff6f9 0%, #ceeffd 90%);
 }
 .container-home h2 {
   display: flex;
@@ -463,10 +480,14 @@ footer p {
   width: 15%;
   border: 2px solid white;
 }
+.classSearch .btn:hover {
+  background-color: #4f5a5f;
+  color: #ffd700;
+}
 .aboutTheTeam {
   display: flex;
   justify-content: center;
-  background: lightgray;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, #eff6f9 0%, #ceeffd 90%);
 }
 .aboutTheTeam p {
   font-size: 3rem;
@@ -478,7 +499,7 @@ footer p {
   }
 }
 .meetTheTeam {
-  background: lightgray;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, #eff6f9 0%, #ceeffd 90%);
 }
 .meetTheTeam h2 {
   display: flex;
@@ -555,12 +576,14 @@ footer p {
   margin-left: 5%;
 }
 .contactUs {
-  background: lightgray;
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, #eff6f9 0%, #ceeffd 90%);
 }
 .contactUs input {
   width: 200px;
   padding: 2%;
   margin: 1%;
+  background-color: #deffe0;
+  background-image: linear-gradient(0deg, #deffe0 0%, #d7e7e2 100%);
 }
 .contactUs textarea {
   width: 400px;
