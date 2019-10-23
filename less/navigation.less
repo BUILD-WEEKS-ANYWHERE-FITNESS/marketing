@@ -21,7 +21,7 @@ header{
         flex-direction: column-reverse;
         width: 100%;
         height: auto;
-        background: url('../img/tablet\ header.jpg') 100% 100% no-repeat;
+        background: url('../img/active-activity-adult-1472887\ \(3\).jpg') 100% 100% no-repeat;
       }
 
     .searchBar{
@@ -47,6 +47,9 @@ header{
          
         @media @mobile{
            flex-direction: column;
+        }
+        @media @tablet{
+            flex-direction: column;
         }
        
 
@@ -76,25 +79,19 @@ header{
         displaY:flex;
         justify-content: center;
         border: 2px solid white;
+        
+        @media @mobile{
+            width: 50%;
+             font-size: 2rem;
+             padding: 5% 50%;
+               
+         
+        }
 
         &:hover{
             background-color: #4f5a5f;
             color: #ffd700;
-        }
-            
-        @media @mobile{
-           width: 50%;
-            font-size: 2rem;
-            padding: 5% 50%;
-              
-        
-        }
-
-        @media @tablet{
-            width: 50%;
-            padding: 3%; 
-        }
-
+        }       
         }
     }
 
