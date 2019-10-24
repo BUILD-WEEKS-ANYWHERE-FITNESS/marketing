@@ -5,20 +5,22 @@
   justify-content: center;
   align-items: center;
 }
-.footer {
-  width: 100%;
-  border-top: 2px dashed silver;
-}
-.footer p {
-  text-align: center;
-  font-size: 1.6rem;
-  padding: 20px;
-}
 body {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+body h1,
+body nav {
+  font-family: 'Black Ops One';
+  letter-spacing: 2px;
+  color: #e7e7e7;
+}
+body h2 {
+  font-family: 'Mirza', cursive;
+  letter-spacing: 2px;
+  color: #e7e7e7;
 }
 body .bodyMinor {
   width: 85%;
@@ -26,25 +28,42 @@ body .bodyMinor {
   flex-direction: column;
   justify-content: center;
 }
+body .bodyMinor .topPart {
+  box-shadow: 3px 3px 3px black;
+}
 body .bodyMinor .header {
-  padding: 5%;
+  border-radius: 4px;
+  padding: 1%;
   background: #ea6c36;
 }
 body .bodyMinor .header nav {
   width: 100%;
-  border: 2px solid red;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  text-shadow: 2px 2px 5px brown;
+}
+@media (max-width: 500px), (max-width: 800px) {
+  body .bodyMinor .header nav {
+    display: flex;
+    border: 2px solid red;
+    font-size: 0.5rem;
+  }
+}
+body .bodyMinor .header nav .point {
+  width: 10%;
 }
 body .bodyMinor .header nav a {
   text-decoration: none;
   background: #9a5131;
-  border: 10px solid black;
+  width: 10%;
+  border: 10px solid #e7e7e7;
   padding: 2%;
   color: #e7e7e7;
   border-radius: 5px;
+  box-shadow: 2px 2px 2px black;
 }
 body .bodyMinor header {
   display: flex;
@@ -60,7 +79,6 @@ body .bodyMinor header .navigation {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 18%;
-  border: 2px solid red;
   width: 50%;
 }
 body .bodyMinor header .navigation a {
@@ -77,14 +95,23 @@ body .bodyMinor header .navigation a {
   border-radius: 10px;
 }
 body .bodyMinor header img {
-  width: 60%;
+  width: 50%;
 }
 body .bodyMinor .fitnessContainer {
   display: flex;
 }
+body .bodyMinor .fitnessContainer h1 {
+  font-size: 2rem;
+}
 body .bodyMinor .fitnessContainer .left,
 body .bodyMinor .fitnessContainer .right {
-  width: 25%;
+  width: 24%;
+}
+@media (max-width: 500px) {
+  body .bodyMinor .fitnessContainer .left,
+  body .bodyMinor .fitnessContainer .right {
+    display: none;
+  }
 }
 body .bodyMinor .fitnessContainer .fitnessCenter {
   display: flex;
@@ -94,6 +121,11 @@ body .bodyMinor .fitnessContainer .fitnessCenter {
   flex-direction: column;
   align-items: center;
   width: 50%;
+}
+@media (max-width: 500px) {
+  body .bodyMinor .fitnessContainer .fitnessCenter {
+    width: 100%;
+  }
 }
 body .bodyMinor .fitnessContainer .fitnessCenter .pt1 {
   width: 100%;
@@ -118,7 +150,11 @@ body .bodyMinor .fitnessContainer .fitnessCenter .pt2 .pt2minor {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 600px) {
+body .bodyMinor .fitnessContainer .fitnessCenter .pt1,
+body .bodyMinor .fitnessContainer .fitnessCenter .pt2 {
+  text-shadow: 2px 2px 5px dodgerblue;
+}
+@media (max-width: 500px), (max-width: 800px) {
   body .bodyMinor .fitnessContainer .fitnessCenter .pt1,
   body .bodyMinor .fitnessContainer .fitnessCenter .pt2 {
     display: flex;
@@ -128,18 +164,36 @@ body .bodyMinor .fitnessContainer .fitnessCenter .pt2 .pt2minor {
     text-align: center;
   }
 }
-@media (max-width: 800px) {
-  body .bodyMinor .fitnessContainer .fitnessCenter .pt1,
-  body .bodyMinor .fitnessContainer .fitnessCenter .pt2 {
-    display: flex;
+body .bodyMinor .flexMeta {
+  display: flex;
+}
+@media (max-width: 500px) {
+  body .bodyMinor .flexMeta {
     flex-direction: column;
-    border: 2px solid red;
-    font-size: 0.5rem;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
+}
+body .bodyMinor .flexMeta .container-home {
+  margin: 0.25%;
+  width: 100%;
+  background: #6eb2cc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .bodyMinor .flexMeta .container-home h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 4rem;
 }
 body .bodyMinor .flex {
   text-align: center;
+  border-radius: 10px;
 }
 body .bodyMinor h1 {
   padding: 1%;
@@ -149,17 +203,9 @@ body .bodyMinor h1 {
 }
 body .bodyMinor .aboutUs {
   display: flex;
-  background: #f2eee5;
-}
-body .bodyMinor .workoutClass {
-  display: flex;
-  justify-content: center;
-  margin-left: 5%;
-}
-body .bodyMinor .workoutClass img {
-  width: 50%;
-  height: auto;
-  border-top: dashed 2px lightgray;
+  background: #2f6a87;
+  box-shadow: 2px 2px 2px black;
+  border-radius: 3px;
 }
 body .bodyMinor .welcomePgraph {
   display: flex;
@@ -170,7 +216,7 @@ body .bodyMinor .welcomePgraph p {
   width: 62%;
   border-bottom: dashed 2px lightgray;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   body .bodyMinor .welcomePgraph p {
     font-size: 1.2rem;
     padding-bottom: 3%;
@@ -181,77 +227,9 @@ body .bodyMinor .welcomePgraph h2 {
   width: 61%;
   border-radius: 2px;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   body .bodyMinor .welcomePgraph h2 {
     font-size: 2.5rem;
     font-weight: bold;
   }
-}
-.content-pick {
-  padding-top: 30px;
-  display: flex;
-  justify-content: space-around;
-}
-@media (max-width: 600px) {
-  .content-pick {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-.content-pick .classType {
-  width: 25%;
-  margin-bottom: 30px;
-}
-@media (max-width: 600px) {
-  .content-pick .classType {
-    width: 62%;
-  }
-}
-.content-pick .classType h4 {
-  display: flex;
-  justify-content: center;
-  border-radius: 12px;
-}
-@media (max-width: 600px) {
-  .content-pick .classType h4 {
-    font-size: 2rem;
-    font-weight: bold;
-  }
-}
-.content-pick .classType p {
-  display: flex;
-  justify-content: center;
-}
-@media (max-width: 600px) {
-  .content-pick .classType p {
-    font-size: 1.2rem;
-  }
-}
-.container-home {
-  width: 100%;
-  background: #57a99a;
-}
-.container-home h2 {
-  display: flex;
-  justify-content: center;
-  height: 100px;
-  font-size: 4rem;
-}
-.hostingClass {
-  font-size: 2rem;
-  text-align: center;
-}
-.hostingClass .classForm {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-input {
-  width: 300px;
-  margin: 2% 0%;
-  height: 40px;
-}
-textarea {
-  width: 500px;
 }
