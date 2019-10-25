@@ -1,10 +1,3 @@
-.testBorder {
-  border: 2px solid green;
-}
-.center {
-  justify-content: center;
-  align-items: center;
-}
 body {
   display: flex;
   align-items: center;
@@ -48,7 +41,6 @@ body .bodyMinor .header nav {
 @media (max-width: 500px), (max-width: 800px) {
   body .bodyMinor .header nav {
     display: flex;
-    border: 2px solid red;
     font-size: 0.5rem;
   }
 }
@@ -106,6 +98,7 @@ body .bodyMinor .fitnessContainer h1 {
 body .bodyMinor .fitnessContainer .left,
 body .bodyMinor .fitnessContainer .right {
   width: 24%;
+  background: #ea6c36;
 }
 @media (max-width: 500px) {
   body .bodyMinor .fitnessContainer .left,
@@ -159,41 +152,9 @@ body .bodyMinor .fitnessContainer .fitnessCenter .pt2 {
   body .bodyMinor .fitnessContainer .fitnessCenter .pt2 {
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
     font-size: 0.5rem;
     text-align: center;
   }
-}
-body .bodyMinor .flexMeta {
-  display: flex;
-}
-@media (max-width: 500px) {
-  body .bodyMinor .flexMeta {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-body .bodyMinor .flexMeta .container-home {
-  margin: 0.25%;
-  width: 100%;
-  background: #6eb2cc;
-  border-radius: 5px;
-  box-shadow: 2px 2px 2px black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-body .bodyMinor .flexMeta .container-home h2 {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-size: 4rem;
-}
-body .bodyMinor .flex {
-  text-align: center;
-  border-radius: 10px;
 }
 body .bodyMinor h1 {
   padding: 1%;
@@ -207,29 +168,62 @@ body .bodyMinor .aboutUs {
   box-shadow: 2px 2px 2px black;
   border-radius: 3px;
 }
-body .bodyMinor .welcomePgraph {
+body .bodyMinor .aboutUs .flexMeta {
+  display: flex;
+}
+@media (max-width: 500px) {
+  body .bodyMinor .aboutUs .flexMeta {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+body .bodyMinor .aboutUs .flexMeta .container-home {
+  margin: 0.25%;
+  width: 100%;
+  background: #6eb2cc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px black;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
-body .bodyMinor .welcomePgraph p {
-  width: 62%;
-  border-bottom: dashed 2px lightgray;
+body .bodyMinor .aboutUs .flexMeta .container-home h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 4rem;
 }
-@media (max-width: 500px) {
-  body .bodyMinor .welcomePgraph p {
-    font-size: 1.2rem;
-    padding-bottom: 3%;
-  }
+body .bodyMinor .aboutUs .flexMeta .flex {
+  text-align: center;
+  border-radius: 10px;
 }
-body .bodyMinor .welcomePgraph h2 {
-  padding-top: 2%;
-  width: 61%;
-  border-radius: 2px;
+body .bodyMinor .aboutUs .flexMeta .flex .flexText p {
+  font-family: 'Jockey One', sans-serif;
+  color: #e7e7e7;
 }
-@media (max-width: 500px) {
-  body .bodyMinor .welcomePgraph h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
+body .bodyMinor .aboutUs .flexMeta .flex .flexText .classes .class button {
+  margin: 2%;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #ea6c36;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  font-family: 'Black Ops One';
+}
+body .bodyMinor .aboutUs .flexMeta .flex .flexText .classes .class button .button:hover {
+  background-color: #3e8e41;
+}
+body .bodyMinor .aboutUs .flexMeta .flex .flexText .classes .class button .button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
